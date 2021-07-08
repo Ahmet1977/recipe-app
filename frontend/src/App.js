@@ -2,16 +2,14 @@ import React, { useState, useEffect } from "react";
 import { Switch, Route, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-
 import AuthService from "./services/auth.service";
-
-import Login from "./components/Login";
-import Register from "./components/Register";
-import Home from "./components/Home";
-import Profile from "./components/Profile";
-import BoardUser from "./components/BoardUser";
-import BoardModerator from "./components/BoardModerator";
-import BoardAdmin from "./components/BoardAdmin";
+import Login from "../src/components/Login";
+import Register from "../src/components/Register";
+import Home from "../src/components/Home";
+import Profile from "../src/components/Profile";
+import BoardUser from "../src/components/BoardUser";
+import BoardModerator from "../src/components/BoardModerator";
+import BoardAdmin from "../src/components/BoardAdmin";
 
 const App = () => {
   const [showModeratorBoard, setShowModeratorBoard] = useState(false);

@@ -9,6 +9,7 @@ const register = (username, email, password) => {
     password,
   });
 };
+
 const login = (username, password) => {
   return axios
     .post(API_URL + "signin", {
@@ -23,12 +24,15 @@ const login = (username, password) => {
       return response.data;
     });
 };
+
 const logout = () => {
   localStorage.removeItem("user");
 };
+
 const getCurrentUser = () => {
   return JSON.parse(localStorage.getItem("user"));
 };
+
 export default {
   register,
   login,
