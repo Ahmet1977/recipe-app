@@ -1,0 +1,28 @@
+.recipe-card {
+    margin: 10% auto;
+    text-align: center;
+}
+
+.recipeLinks:hover {
+    cursor: default;
+}
+.recipeHover:hover {
+    cursor: pointer;
+}
+
+
+/* BoardUser CSS */
+
+.createRecipeInputs{
+    margin: 2%;
+    width: 300px;
+}
+
+.createRecipeButton{
+    margin: 2%;
+    padding: 0.5% 1.5%;
+    border-radius: 0.5rem;
+}
+#createRecipeDiv{
+    margin-left: 2%;
+}
